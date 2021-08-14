@@ -18,11 +18,14 @@
 
   <!-- Scripts -->
   <script src="{{ asset('js/app.js') }}" defer></script>
+  <script src="{{ asset('js/react/app.js') }}" defer></script>
 </head>
 
 <body class="font-sans text-gray-900 antialiased">
+  <div class="fixed bottom-2 right-2">
+    <div id="react_dark"></div>
+  </div>
   @yield("content")
-
   @stack("script")
 </body>
 
